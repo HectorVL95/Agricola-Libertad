@@ -1,0 +1,17 @@
+@use '_vars';
+
+.Trust{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.Trust > h1,p{
+  text-align:  center;
+}
+.Trust > .title{
+  font-size: 2.1rem;
+}
+.Trust > .text{
+font-size: 1.7rem;
+}

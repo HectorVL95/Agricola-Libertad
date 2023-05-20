@@ -1,0 +1,35 @@
+@use'_vars';
+
+footer{
+  background-color: whitesmoke;
+  padding: 50px 20px;
+}
+.title-contact{
+  position: relative;
+  top: 15px;
+}
+.smallLogo{
+  width: 200px;
+}
+.contact-div{
+  display: flex;
+  align-items: center;
+}
+.texto{
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: left;
+}
+.tel-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.telefono{
+  width: 25px;
+  margin-right: 5px;
+}
+.numero-tel{
+  font-size: 1.2rem;
+  font-weight: 300;
+}

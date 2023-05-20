@@ -1,0 +1,11 @@
+@use '_vars';
+.Stats{
+padding: 25px 15px;
+}
+.stats-title{
+  font-size: 2.1rem;
+}
+.stat-squares{
+  display: flex;
+  justify-content: space-around;
+}

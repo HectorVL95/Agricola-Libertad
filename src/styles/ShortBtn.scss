@@ -1,0 +1,15 @@
+@use '_vars';
+
+.btn-div{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-div > button{
+background-color: #EE7C32;
+width: 140px;
+height: 40px;
+border-radius: 25px;
+border: none;
+color: white;
+}

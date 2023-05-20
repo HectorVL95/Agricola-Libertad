@@ -1,0 +1,17 @@
+@use '_vars';
+nav{
+position: absolute;
+top: 120px;
+width: 100vw;
+background-color: white;
+}
+.unordered-list{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.unordered-list > li{
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+

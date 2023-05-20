@@ -1,0 +1,24 @@
+@use '_vars';
+
+.topBanner{
+  padding: 15px;
+}
+.banner-title{
+  font-weight: 800;
+  color: white;
+  font-size: 4rem;
+}
+.banner-desc{
+  color: white;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+.button-contact{
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #EE7C32;
+  color: white;
+  margin-bottom: 25px;
+}

@@ -1,0 +1,23 @@
+@use '_vars';
+
+.stat{
+  padding: 10px;
+  box-shadow: 0px 4px 23px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 4px 23px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 23px 0px rgba(0,0,0,0.75);
+  border: none;
+  width: 150px;
+  height: auto;
+  border-radius: 20px;
+}
+.cantidad{
+  font-size: 2rem;
+}
+.contacto{
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.descripcion{
+  font-size: 1.7rem;
+  font-weight: 300;
+}
