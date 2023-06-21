@@ -4,32 +4,25 @@ footer{
   background-color: whitesmoke;
   padding: 50px 20px;
 }
-.title-contact{
-  position: relative;
-  top: 15px;
-}
 .smallLogo{
   width: 200px;
-}
-.contact-div{
-  display: flex;
-  align-items: center;
+  cursor: pointer;
 }
 .texto{
   font-size: 1.5rem;
   font-weight: 300;
   text-align: left;
 }
-.tel-div{
-  display: flex;
+.sub-menu{
+  display: grid;
+  grid-template-columns: 200px 200px;
   justify-content: center;
-  align-items: center;
 }
-.telefono{
-  width: 25px;
-  margin-right: 5px;
+.ul-title{
+  list-style: none;
+  font-size: 1.5rem;
 }
-.numero-tel{
-  font-size: 1.2rem;
+.ul-title > li{
   font-weight: 300;
+  font-size: 1.2rem;
 }

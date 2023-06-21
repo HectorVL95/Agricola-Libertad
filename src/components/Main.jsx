@@ -5,6 +5,10 @@ import StatsSection from './StatsSection';
 import Servicios from './Servicios';
 import Trust from './Trust';
 import '../styles/Main.scss'
+import { BrowserRouter as Router, Switch, 
+  Route, Redirect,} from "react-router-dom";
+import Header from './Header';
+import Footer from './Footer';
 
 const Main = () => {
 
@@ -14,14 +18,22 @@ const Main = () => {
     dataEl={dataEl}/>
   })
 
+
   return (
     <main>
-    {DataBanner[0]}
-    <StatsSection/>
-    <Servicios/>
-    <Trust/>
-    {DataBanner[1]}
-  </main>
+      <Header/>
+      <div className='bannerAndVideo'>
+        <div className='dataBanner'>
+          {DataBanner[0]}
+        </div>
+        <iframe className='video-banner ' src="https://player.vimeo.com/video/724543681?h=d2e7c122f1&muted=1&autoplay=1&loop=1&transparent=0&background=1&app_id=122963" frameborder="0"></iframe>
+      </div>
+      <StatsSection/>
+      <Servicios/>
+      <Trust/>
+      {DataBanner[1]}
+      <Footer/>
+    </main>
   );
 }
 

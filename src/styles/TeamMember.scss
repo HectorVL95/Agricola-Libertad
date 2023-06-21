@@ -1,0 +1,22 @@
+.TeamMember{
+  display: flex;
+  justify-content: center;
+}
+.TeamMember > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.staff-pic{
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+.name{
+  font-size: 1.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+.role{
+  font-size: 1.6rem;
+}

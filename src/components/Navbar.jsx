@@ -1,14 +1,30 @@
 import React from 'react'
 import '../styles/Navbar.scss'
+import { useNavigate } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+  let navigate = useNavigate()
+  const changeRoute = ()=>{
+    let path = `/Story`;
+    navigate(path)
+  }
+  function goToTeams(){
+    let path= '/Team'
+    navigate(path)
+  }
+  function goMission(){
+    let path='/MissionVision'
+    navigate(path)
+  }
+
   return (
     <nav>
       <ul className='unordered-list'>
         <li>Galeria</li>
-        <li>Mision y Vision</li>
-        <li>Nuestro Equipo</li>
-        <li>Historia</li>
+        <li onClick={goMission}>Mision y Vision</li>
+        <li onClick={goToTeams}>Nuestro Equipo</li>
+        <li onClick={changeRoute}>Historia</li>
       </ul>
     </nav>
   );

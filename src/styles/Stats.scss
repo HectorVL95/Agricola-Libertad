@@ -21,3 +21,9 @@
   font-size: 1.7rem;
   font-weight: 300;
 }
+
+@media(min-width:768px){
+  .stat{
+    width: 220px;
+  }
+}

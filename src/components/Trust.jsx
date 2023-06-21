@@ -5,11 +5,11 @@ import '../styles/Trust.scss'
 
 const Trust = (props) => {
 
-  /*const btn = DataShortBtn.map(dataEl =>{
+  const btn = DataShortBtn.map(dataEl =>{
     <ShortBtn 
-    key={id}
+    key={dataEl.id}
     dataEl={dataEl}/>
-  })*/
+  })
 
 
 

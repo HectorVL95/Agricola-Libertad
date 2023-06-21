@@ -16,7 +16,6 @@ const StatsSection = () => {
       <h1 className='stats-title'>Agricola Libertad se compromete a dar la mejor calidad de productos y servicio a cliente</h1>
       <div className='stat-squares'>
         {stats}
-        
       </div>
     </section>
   );
