@@ -5,11 +5,11 @@ footer{
   padding: 50px 20px;
 }
 .smallLogo{
-  width: 200px;
+  width: 300px;
   cursor: pointer;
 }
 .texto{
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 300;
   text-align: left;
 }
@@ -17,12 +17,19 @@ footer{
   display: grid;
   grid-template-columns: 200px 200px;
   justify-content: center;
+  align-items: center;
 }
 .ul-title{
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .ul-title > li{
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
+}
+
+@media (min-width: 768px) {
+  .sub-menu{
+    display: flex;
+  }
 }

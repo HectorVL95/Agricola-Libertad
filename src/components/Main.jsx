@@ -1,14 +1,14 @@
 import React from 'react'
 import DataTopBanner from '../DataTopBanner';
 import TopBanner from './TopBanner';
+import BottomBanner from './BottomBanner';
 import StatsSection from './StatsSection';
 import Servicios from './Servicios';
 import Trust from './Trust';
 import '../styles/Main.scss'
-import { BrowserRouter as Router, Switch, 
-  Route, Redirect,} from "react-router-dom";
 import Header from './Header';
 import Footer from './Footer';
+
 
 const Main = () => {
 
@@ -18,6 +18,11 @@ const Main = () => {
     dataEl={dataEl}/>
   })
 
+  const bottomBanner = DataTopBanner.map(dataEl=>{
+    return <BottomBanner
+     key={dataEl.id}
+     dataEl={dataEl}/>
+  })
 
   return (
     <main>
@@ -31,7 +36,9 @@ const Main = () => {
       <StatsSection/>
       <Servicios/>
       <Trust/>
-      {DataBanner[1]}
+      <article className='historia-banner'>
+        {bottomBanner[1]}
+      </article>
       <Footer/>
     </main>
   );

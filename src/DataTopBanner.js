@@ -9,6 +9,7 @@ export default [
     description: "Ofrece maiz de alta calidad, vendemos tanto a pequeños distribuidores como grandes cadenas internacionales y clientes en el extranjeros. Compre con confianza, nuestra reputacion nos respalda asi como el testimonio de otros compradores.",
     contact: "Conecta con un experto",
     background: "#154344",
+    route: "/GetInTouch"
   },
   {
     id:1,
@@ -16,7 +17,7 @@ export default [
     description: "Aprenda sobre los origines de nuestro huerto y como fue que empezo todo en el ejido Tierra Y Libertad No. 2",
     contact: "Click aqui para ver mas",
     background: "center url(https://producepay.com/wp-content/uploads/2022/08/our-story-produce-pay-scaled.jpg)",
-    route: "Story",
+    route: "/Story",
   },
   { 
     id:2,

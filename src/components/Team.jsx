@@ -13,8 +13,7 @@
     const staff = StaffPicArray.map(dataEl=>{
       return <TeamMember
       key={dataEl.id}
-      dataEl={dataEl}
-      handleClick={changeRoute}/>
+      dataEl={dataEl}/>
     })
 
 
@@ -31,20 +30,22 @@
         dataEl={dataEl}/>
       }
     )*/
+   /* const rosie = staff[0];
+    const heather = staff[1];
+    const kadak = staff[2]
 
     let navigate = useNavigate()
     function changeRoute(){
-        if(staff[0]){ 
+        if(rosie){ 
           navigate(`/AboutTeamRosie`);
         }
-        else if(staff === staff[1]){
+        else if(heather){
           navigate('/AboutTeamHeather')
         }
-        else if(staff === staff[2]){
+        else if(kadak){
           navigate('/AboutTeamKadak')
       }
-    }
-
+    }*/
 
     return (
       <main className='Team'>

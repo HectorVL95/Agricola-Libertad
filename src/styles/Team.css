@@ -1,0 +1,14 @@
+.gallery-team {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-auto-rows: minmax(100px, auto);
+  grid-row-gap: 30px;
+  justify-content: center;
+  padding-top: 145px;
+}
+
+@media (min-width: 768px) {
+  .gallery-team {
+    grid-template-columns: 400px 400px;
+  }
+}/*# sourceMappingURL=Team.css.map */

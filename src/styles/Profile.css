@@ -1,0 +1,25 @@
+.profile-pic {
+  padding: 50px;
+  padding-top: 150px;
+}
+
+.profile-pic > img {
+  width: 250px;
+}
+
+.name {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.role {
+  font-size: 1.8rem;
+  text-align: left;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.description {
+  font-size: 1.6rem;
+  text-align: left;
+}/*# sourceMappingURL=Profile.css.map */

@@ -22,7 +22,7 @@ const MissionVision = () => {
           <h1>Valores</h1>
           <p>En Agricola libertad, nuestros valores son demostrados atraves de nuestros socios y aquel exito que hemos compartido con ellos:</p>
           <div className='list'>
-            <ul className='unordered-list'>
+            <ul className='values-unordered-list'>
               <li className='list-item item-1'>Trabajamos con respeto y dignidad para nuestros clientes, empleados y asociados</li>
               <li className='list-item'>Mantenemos una relacion abierta y honesta con todos los involucrados en nuestra compañia</li>
               <li className='list-item'>Tenemos la iniciativa para ir por el desarrollo personal y aprendizaje</li>

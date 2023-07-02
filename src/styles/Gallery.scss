@@ -1,0 +1,33 @@
+.darken{
+  width: 100%;
+  height: calc(100%);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.darken-inactive{
+  visibility: hidden;
+}
+.gallery-section{
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-row-gap: 5%;
+  justify-content: center;
+  margin-bottom: 90px;
+  padding-top: 150px;
+}
+.bigImage{
+  position: fixed;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 180px;
+  bottom: auto;
+  width: 345px;
+}

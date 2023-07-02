@@ -1,0 +1,31 @@
+.Mission-Vision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  padding-top: 150px;
+}
+
+.family-pic {
+  width: 300px;
+}
+
+.divs > h1 {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.divs > p {
+  font-size: 1.6rem;
+  line-height: 25px;
+}
+
+.list {
+  padding: 10px;
+}
+
+.values-unordered-list {
+  font-size: 1.6rem;
+  line-height: 25px;
+}/*# sourceMappingURL=MissionVision.css.map */

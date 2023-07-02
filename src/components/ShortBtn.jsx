@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/ShortBtn.scss'
 
 const ShortBtn = (props) => {
+
   return (
     <div className='btn-div'>
       <button>
