@@ -24,3 +24,31 @@
   font-size: 1.6rem;
   line-height: 25px;
 }
+@media (min-width:768px) {
+  .Mission-Vision{
+    padding: 30px;
+    padding-top: 150px;
+  }
+  .family-pic{
+    width: 425px;
+  }
+}
+@media (min-width:1920px){
+  .Mission-Vision{
+    padding: 80px;
+    padding-top: 150px;
+  }
+  .family-pic{
+    width: 768px;
+  }
+  .divs > h1{
+    font-size: 3rem;
+  }
+  .divs > p{
+    font-size: 1.9rem;
+  }
+  .values-unordered-list{
+    font-size: 1.9rem;
+    line-height: 35px;
+  }
+}

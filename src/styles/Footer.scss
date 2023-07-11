@@ -33,3 +33,6 @@ footer{
     display: flex;
   }
 }
+@media (min-width:1920px) {
+  footer{padding: 50px 100px;}
+}

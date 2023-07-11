@@ -24,7 +24,49 @@
   margin-bottom: 25px;
   cursor: pointer;
 }
+.inactive{
+  display: none;
+}
 
-@media (min-width: 768px) {
+@media (min-width: 880px) {
+  .section-top-banner{
+    display:flex;
+    flex: 1 1 ;
+  }
+  .topBanner{
+    width:50%;
+  }
+  .wrap{
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+  }
+  .video-banner{
+    height: 170%;
+    width: 350%;
+    position: relative;
+    right: 450px;
+    bottom:270px;
+  }
+  .inactive{
+    display: block;
+  }
+}
 
+@media (min-width: 1028px){
+ .video-banner{
+  height: 170%;
+  width: 250%;
+  position: relative;
+  right: 450px;
+  bottom:190px;
+ } 
+}
+@media (min-width:1920px) {
+.section-top-banner{
+  height: 800px;
+}
+.banner-title{
+  margin-top: 200px;
+}
 }

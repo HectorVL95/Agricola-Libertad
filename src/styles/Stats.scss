@@ -26,4 +26,25 @@
   .stat{
     width: 220px;
   }
+  .cantidad{
+    font-size: 2.2rem;
+  }
+  .contacto{
+    font-size: 2rem;
+  }
+  .descripcion{
+    font-size: 1.9rem;
+  }
+}
+
+@media (min-width:1200px) {
+  .cantidad{
+    font-size: 2.6rem;
+  }
+  .contacto{
+    font-size: 2.4rem;
+  }
+  .descripcion{
+    font-size: 2.3rem;
+  }
 }

@@ -19,3 +19,28 @@
   font-size: 1.6rem;
   text-align: left;
 }
+@media (min-width:1920px) {
+  .profile-pic{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .profile-pic > img{
+    width: 450px;
+    align-self: center;
+  }
+  .name{
+    font-size: 3rem;
+    text-align: center;
+  }
+  .role{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .profile-pic > .description{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}

@@ -1,17 +1,5 @@
 @use '_vars';
-.video-banner{
-  display: none;
-}
+
 
 @media(min-width:768px){
-  .bannerAndVideo{
-    display: flex;
-    position: relative;
-
-  }
-  .video-banner{
-    display: block;
-    border: 0;
-    position: relative;
-  }
 }

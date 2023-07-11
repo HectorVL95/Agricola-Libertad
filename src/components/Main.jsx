@@ -27,12 +27,7 @@ const Main = () => {
   return (
     <main>
       <Header/>
-      <div className='bannerAndVideo'>
-        <div className='dataBanner'>
-          {DataBanner[0]}
-        </div>
-        <iframe className='video-banner ' src="https://player.vimeo.com/video/724543681?h=d2e7c122f1&muted=1&autoplay=1&loop=1&transparent=0&background=1&app_id=122963" frameborder="0"></iframe>
-      </div>
+      {DataBanner[0]}
       <StatsSection/>
       <Servicios/>
       <Trust/>

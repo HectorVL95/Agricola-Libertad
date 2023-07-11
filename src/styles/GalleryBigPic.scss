@@ -22,3 +22,17 @@
 .img-pic{
   width: 250px;
 }
+@media (min-width:768px) {
+  .GalleryBigPic{
+    width: 480px;
+    height: auto;
+
+  }
+  .img-pic{
+    width: 400px;
+  }
+  .bigImage{
+    display: flex;
+    justify-content: center;
+  }
+}

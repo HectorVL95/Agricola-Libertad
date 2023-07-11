@@ -36,7 +36,7 @@
 
     let navigate = useNavigate()
     function changeRoute(){
-        if(rosie){ 
+        if(rosie){  
           navigate(`/AboutTeamRosie`);
         }
         else if(heather){
@@ -50,6 +50,7 @@
     return (
       <main className='Team'>
         <Header/>
+        <h1 className='team-title'>Leadership Team</h1>
         <section className='gallery-team'>
             {staff[0]}
             {staff[1]}

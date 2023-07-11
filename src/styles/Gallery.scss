@@ -31,3 +31,8 @@
   bottom: auto;
   width: 345px;
 }
+@media (min-width:768px) {
+  .gallery-section{
+    margin-bottom: 150px;
+  }
+}

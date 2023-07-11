@@ -3,7 +3,7 @@ import '../styles/TopBanner.scss'
 
 const TopBannerNoBtn = (props) => {
   return (
-    <article className='topBanner' style={{background: props.dataEl.background}}>
+    <article className='topBanner' style={{background: props.dataEl.background, backgroundSize: "length", backgroundRepeat: "no-repeat"}}>
     <h1 className='banner-title'>{props.dataEl.title}</h1>
     <p className='banner-desc'>{props.dataEl.description}</p>
   </article>

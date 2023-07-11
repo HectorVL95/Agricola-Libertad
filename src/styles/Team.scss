@@ -1,14 +1,28 @@
+.Team{
+  margin-top: -15px;
+}
+.team-title{
+  padding-top: 145px;
+  text-align: center;
+  margin-bottom: 45px;
+}
 .gallery-team{
   display: grid;
   grid-template-columns: 200px 200px;
   grid-auto-rows: minmax(100px, auto);
   grid-row-gap: 30px;
   justify-content: center;
-  padding-top: 145px;
+
 }
 
 @media(min-width:768px){
   .gallery-team{
     grid-template-columns: 400px 400px;
+  }
+}
+@media (min-width:1920px) {
+  .gallery-team{
+    grid-template-columns: 600px 600px;
+    padding-top: 200px;
   }
 }

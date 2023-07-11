@@ -52,3 +52,32 @@ label{
   color: whitesmoke;
   margin-top: 40px;
 }
+@media (min-width:768px) {
+  .GetinTouch{
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+@media (min-width:1920px) {
+  .GetinTouch{
+    padding-left: 450px;
+    padding-right: 450px;
+  }
+  .GetinTouch > h1{
+    font-size: 3rem;
+  }
+  .country-dropdown{
+    height: 100px;
+  }
+  .input-text{
+    height: 100px;
+  }
+  .sendBtn{
+    width: 120px;
+    height: 60px;
+    border-radius: 35px;
+    font-size: 2rem;
+    position: relative;
+    bottom: 40px;
+  }
+}
