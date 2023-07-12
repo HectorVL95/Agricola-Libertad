@@ -1,11 +1,11 @@
-.title{
+.historia-title{
   font-size: 3rem;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #43484D;
 }
-.text{
+.historia-text{
   font-size: 1.6rem;
 }
 .worker-div{
@@ -28,6 +28,9 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+  .worker{
+    width: 400px;
+  }  
 }
 @media (min-width:1120px) {
   .historia{
@@ -37,13 +40,8 @@
 }
 @media(min-width:1920px){
   .historia{
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 300px;
+    padding-right: 300px;
   }
-  .title{
-    font-size: 3.5rem;
-  }
-  .text{
-    font-size: 2.2rem;
-  }
+
 }

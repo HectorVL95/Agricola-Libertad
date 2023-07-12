@@ -5,6 +5,7 @@
   padding-top: 145px;
   text-align: center;
   margin-bottom: 45px;
+  font-size: 3rem;
 }
 .gallery-team{
   display: grid;
@@ -12,7 +13,6 @@
   grid-auto-rows: minmax(100px, auto);
   grid-row-gap: 30px;
   justify-content: center;
-
 }
 
 @media(min-width:768px){
@@ -23,6 +23,5 @@
 @media (min-width:1920px) {
   .gallery-team{
     grid-template-columns: 600px 600px;
-    padding-top: 200px;
   }
 }

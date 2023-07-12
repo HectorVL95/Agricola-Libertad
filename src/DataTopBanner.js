@@ -23,6 +23,7 @@ export default [
   { 
     id:2,
     title: "Construyendo confianza y transparencia para ofrecer productos de primera",
+    description:"Nuestro compromiso es con el cliente, su tiempo importa mucho para nosotros, que el cliente este seguro que sus productos llegaran en la mejor condicion y calidad",
     background: "url(https://producepay.com/wp-content/uploads/2022/08/aproducepay-is-building-a-more-connected-and-sustainable-fresh-produce-supply-chain.jpg)",
     backgroundSecond: "#154344"
   }

@@ -31,6 +31,14 @@
   bottom: auto;
   width: 345px;
 }
+.selected-image{
+  width: 400px;
+  height: auto;
+  background-color: grey;
+  border: 1px black solid;
+  border-radius: 5px;
+
+}
 @media (min-width:768px) {
   .gallery-section{
     margin-bottom: 150px;

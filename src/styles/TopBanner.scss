@@ -1,18 +1,19 @@
 @use '_vars';
-
+.section-top-banner{
+  padding-top: 95px;
+}
 .topBanner{
   padding: 15px;
-  padding-top: 95px;
 }
 .banner-title{
   font-weight: 800;
   color: white;
-  font-size: 4rem;
+  font-size: 1.9rem;
 }
 .banner-desc{
   color: white;
-  font-weight: 500;
-  font-size: 1.7rem;
+  font-weight: 500; 
+  font-size: 1.6rem;
 }
 .button-contact{
   width: 180px;
@@ -27,14 +28,42 @@
 .inactive{
   display: none;
 }
-
+.second-article{
+  background-color: #154344;
+}
 @media (min-width: 880px) {
   .section-top-banner{
     display:flex;
     flex: 1 1 ;
   }
+  .top-banner-no-btn{
+    flex-direction: row-reverse;
+  }
   .topBanner{
     width:50%;
+    height: 60x;
+  }
+  .text-wrap{
+
+  }
+  .banner-desc--alt{
+    display: none;
+  }
+  .topBanner-alt{
+    height: 570px;
+  }
+  .second-article{
+    width: 50%;
+    height: 600px;
+  }
+  .second-article > .text-wrap{
+    padding: 30px;
+  }
+  .banner-title--alt{
+    display: none;
+  }
+  .banner-title--alt{
+    display: none;
   }
   .wrap{
     width: 50%;
@@ -61,12 +90,24 @@
   right: 450px;
   bottom:190px;
  } 
+ .second-article > .text-wrap{
+  padding: 60px;
+}
+
 }
 @media (min-width:1920px) {
 .section-top-banner{
   height: 800px;
 }
-.banner-title{
-  margin-top: 200px;
+
+.top-banner-no-btn{
+  height: unset;
 }
+.text-wrap{
+  padding: 100px;
+}
+.second-article > .text-wrap{
+  padding: 100px;
+}
+
 }
