@@ -16,7 +16,6 @@
       dataEl={dataEl}/>
     })
 
-
     /*const aboutTeam = StaffPicArray.map(
       dataEl=>{
         return <AboutTeamRosie
@@ -52,12 +51,7 @@
         <Header/>
         <h1 className='team-title'>Leadership Team</h1>
         <section className='gallery-team'>
-            {staff[0]}
-            {staff[1]}
-            {staff[2]}
-            {staff[3]}
-            {staff[4]}
-            {staff[5]}
+          {staff.map((item) => item) }
         </section>
         <Footer/>
       </main>
