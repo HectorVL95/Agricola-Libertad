@@ -8,7 +8,7 @@ const TeamMember = (props) => {
     <div className='TeamMember'>
       <div className=''>
         <img className='staff-pic' src={props.dataEl.img} alt="Staff" />
-        <Link to={props.dataEl.route} className='name'>{props.dataEl.name}</Link>
+        <p className='name'>{props.dataEl.name}</p>
         <p className='role'>{props.dataEl.role}</p>
       </div>
     </div>

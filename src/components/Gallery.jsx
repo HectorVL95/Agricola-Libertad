@@ -7,6 +7,7 @@ import '../styles/Gallery.scss';
 import GalleryPic from './GalleryPic';
 import DataGallery from '../DataGallery';
 import closeBtn from '../assets/cancel-icon-svgrepo-com.svg'
+import TeamMember from './TeamMember';
 
 const Gallery = () => {
 

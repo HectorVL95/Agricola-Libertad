@@ -3,17 +3,17 @@
   import Footer from './Footer';
   import TeamMember from './TeamMember';
   import '../styles/Team.scss'
-  import StaffPicArray from '../StaffPicArray';
-  import AboutTeamRosie from './AboutTeamRosie';
-  import { useNavigate } from 'react-router-dom';
-  import AboutTeamHeather from './AboutTeamHeather';
-  import AboutTeamKadak from './AboutTeamKadak';
+  import StaffPicArray from '../StaffPicArray'
+  import {Route, Routes, Link} from 'react-router-dom';
+  import AboutTeamMember from './AboutTeamMember';
+
 
   const Team = () => {
     const staff = StaffPicArray.map(dataEl=>{
-      return <TeamMember
-      key={dataEl.id}
+      return <Link key={dataEl.id} to={`/staff/${dataEl.id}`}> 
+      <TeamMember
       dataEl={dataEl}/>
+      </Link>
     })
 
     /*const aboutTeam = StaffPicArray.map(
@@ -53,6 +53,9 @@
         <section className='gallery-team'>
           {staff.map((item) => item) }
         </section>
+        <Routes>
+            <Route path='/staff/:id' element={<AboutTeamMember  staffMembers={StaffPicArray}/>}/>
+        </Routes>
         <Footer/>
       </main>
     );
