@@ -1,7 +1,7 @@
 @use '_vars';
 
 .stat{
-  padding: 10px;
+  padding: 20px;
   box-shadow: 0px 4px 23px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 4px 23px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 4px 23px 0px rgba(0,0,0,0.75);
@@ -9,6 +9,9 @@
   width: 150px;
   height: auto;
   border-radius: 20px;
+}
+.stat > .stat-unorder-list{
+  font-size: 1.6rem;
 }
 .cantidad{
   font-size: 2rem;
@@ -20,6 +23,10 @@
 .descripcion{
   font-size: 1.7rem;
   font-weight: 300;
+}
+.stat-img{
+  width: 150px;
+  height: auto;
 }
 
 @media(min-width:768px){

@@ -25,6 +25,16 @@ export default [
     title: "Construyendo confianza y transparencia para ofrecer productos de primera",
     description:"Nuestro compromiso es con el cliente, su tiempo importa mucho para nosotros, que el cliente este seguro que sus productos llegaran en la mejor condicion y calidad",
     background: "url(https://producepay.com/wp-content/uploads/2022/08/aproducepay-is-building-a-more-connected-and-sustainable-fresh-produce-supply-chain.jpg)",
-    backgroundSecond: "#154344"
+    backgroundSecond: "#154344",
+    showBtn: false
+  },
+  {
+    id:3,
+    title: "Empresa socialmente responsable en la comprescion de carbono",
+    description: "Obtén más información acerca de cómo la industria agrícola tiene un gran potencial para convertirse en un sector más rentable y sustentable.",
+    background: "url(https://producepay.com/wp-content/uploads/2022/08/the-very-first-carbon-offset-program-for-the-produce-industry-produce-pay.jpg)",
+    contact: "Empieza aqui",
+    backgroundSecond: "#154344",
+    showBtn: true
   }
 ]

@@ -8,6 +8,7 @@ import MissionVision from './components/MissionVision';
 import GetInTouch from './components/GetInTouch';
 import Gallery from './components/Gallery';
 import GalleryBigPic from './components/GalleryBigPic.jsx';
+import CarbonFootprint from './components/CarbonFootprint';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/AboutTeamMember" element={<AboutTeamMember/>}/>
           <Route path='/MissionVision' element={<MissionVision/>}/>
           <Route path='/GetInTouch' element={<GetInTouch/>}/>
+          <Route path='/CarbonFootprint' element={<CarbonFootprint/>}/>
         </Routes>
       </BrowserRouter>
     </div>

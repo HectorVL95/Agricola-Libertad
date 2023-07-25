@@ -8,6 +8,7 @@ import Trust from './Trust';
 import '../styles/Main.scss'
 import Header from './Header';
 import Footer from './Footer';
+import Datastats from '../Datastats';
 
 
 const Main = () => {
@@ -24,11 +25,14 @@ const Main = () => {
      dataEl={dataEl}/>
   })
 
+  const filteredStatsData = Datastats.filter((dataEl) => dataEl.id === 1 || dataEl.id === 2  )
+
+
   return (
     <main>
       <Header/>
       {DataBanner[0]}
-      <StatsSection/>
+      <StatsSection statsData={filteredStatsData}/>
       <Servicios/>
       <Trust/>
       <article className='historia-banner'>

@@ -4,16 +4,16 @@
   import TeamMember from './TeamMember';
   import '../styles/Team.scss'
   import StaffPicArray from '../StaffPicArray'
-  import {Route, Routes, Link} from 'react-router-dom';
+  import {Route, Routes, Link, useParams} from 'react-router-dom';
   import AboutTeamMember from './AboutTeamMember';
 
 
   const Team = () => {
     const staff = StaffPicArray.map(dataEl=>{
-      return <Link key={dataEl.id} to={`/staff/${dataEl.id}`}> 
-      <TeamMember
-      dataEl={dataEl}/>
-      </Link>
+      return (
+      <Link key={dataEl.id} to={`/staff/${dataEl.id}`}> 
+        <TeamMember dataEl={dataEl}/>
+      </Link>);
     })
 
     /*const aboutTeam = StaffPicArray.map(
@@ -46,6 +46,8 @@
       }
     }*/
 
+    const { id } = useParams()
+
     return (
       <main className='Team'>
         <Header/>
@@ -54,7 +56,7 @@
           {staff.map((item) => item) }
         </section>
         <Routes>
-            <Route path='/staff/:id' element={<AboutTeamMember  staffMembers={StaffPicArray}/>}/>
+            <Route path={`/staff/${id}`} element={<AboutTeamMember staffMembers={StaffPicArray} />} />
         </Routes>
         <Footer/>
       </main>

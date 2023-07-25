@@ -17,7 +17,7 @@ const TopBanner = (props) => {
         <div className='text-wrap'>
           <h1 className='banner-title'>{props.dataEl.title}</h1>
           <p className='banner-desc'>{props.dataEl.description}</p>
-          <button onClick={routeChange} className='button-contact'>{props.dataEl.contact}</button>
+          {props.dataEl.showBtn && <button onClick={routeChange} className='button-contact'>{props.dataEl.contact}</button>}
         </div>
       </article>
       <div className='wrap'>

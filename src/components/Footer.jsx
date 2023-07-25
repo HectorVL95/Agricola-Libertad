@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/Footer.scss'
 import smallLogo from '../assets/agricola-lib--small-logo.png'
 import telephone from '../assets/telephone-svgrepo-com.svg'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 const Footer = () => {
 
@@ -24,7 +24,9 @@ const Footer = () => {
         </ul>
         <ul className='ul-title'>
           Sutenibilidad
+          <Link to={``}>
           <li>Programa contra el monoxido de carbono</li>
+          </Link>
         </ul>
         <ul className='ul-title'>
           Servicios

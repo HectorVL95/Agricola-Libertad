@@ -3,13 +3,25 @@ import Datastats from '../Datastats';
 import Stats from './Stats';
 import '../styles/StatsSection.scss'
 
-const StatsSection = () => {
+const StatsSection = ({statsData}) => {
 
-    const stats = Datastats.map(dataEl =>{
+    const stats = statsData.map(dataEl =>{
+
+      let containerClassName = ''
+
+      if(dataEl.id === 3){
+        containerClassName = 'stats-container-id-3'
+      }
+      else if(dataEl.id === 4){
+        containerClassName = 'stats-container-id-4'
+      }
+
       return <Stats
       key={dataEl.id}
-      dataEl={dataEl}/>
+      dataEl={dataEl}
+      containerClassName={containerClassName}/>
     })
+
 
   return (
     <section className='Stats'>

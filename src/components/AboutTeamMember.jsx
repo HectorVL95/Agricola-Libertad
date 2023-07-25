@@ -4,11 +4,11 @@ import Footer from './Footer'
 import '../styles/AboutTeamMember.scss'
 import { useParams } from 'react-router-dom'
 
-const AboutTeamHeather = (staffMembers) => {
+const AboutTeamMember = (staffMembers) => {
 
   const { id } = useParams()
   
-  const selectedMember = staffMembers.find((member) => member.id === id)
+  const selectedMember = staffMembers.find((member) => member.id === id);
 
   return (
     <main className='AboutTeam'>
@@ -24,4 +24,4 @@ const AboutTeamHeather = (staffMembers) => {
   );
 }
 
-export default AboutTeamHeather;
+export default AboutTeamMember;

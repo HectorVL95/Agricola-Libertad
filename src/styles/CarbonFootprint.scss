@@ -1,0 +1,106 @@
+.carbon-action{
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carbon-action > h2{
+  text-align: center;
+  font-size: 3rem;
+}
+.carbon-sol-images-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carbon-sol-images-text > .carbon-img{
+  width: 300px;
+  align-self: center;
+  margin-bottom: 15px;
+}
+.carbon-sol-text > p {
+  font-size: 1.6rem;
+}
+.grafica{
+  width: 400px;
+  max-width: 1800px;
+  align-self: center;
+}
+.graph-description{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.introduccion-carbono{
+  display: flex;
+  flex-direction: column;
+}
+.introduccion-carbono > h1{
+  text-align: center;
+}
+.introduccion-carbono > ul{
+  text-align: center;
+  list-style:none;
+  position: relative;
+  padding-inline-end: 40px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.introduccion-carbono > ul > li{
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
+  text-align: left;
+  left: 10px;
+}
+.introduccion-carbono > ul > li::before{
+  content: '⯈';
+  position: absolute;
+  left: 40px;
+}
+.introduccion-carbono > ul > li:active{
+  color: #154344;
+}
+.introduccion-carbono > ul > li:active::before{
+  color: #154344;
+  content: '▲';
+  left: 40px;
+}
+.li-text{
+  text-decoration: none;
+  font-weight: 400;
+}
+.li-text-inactive{
+  display: none;
+}
+@media (min-width:880px) {
+
+  .carbon-sol-images-text{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .carbon-sol-images-text > .carbon-img{
+    width: 500px;
+  }
+  .carbon-sol-text{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .grafica{
+    width: 500px;
+  }
+}
+@media (min-width:1920px) {
+  .carbon-action{
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .carbon-sol-text{
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
