@@ -7,8 +7,11 @@ import Datastats from '../Datastats';
 import '../styles/CarbonFootprint.scss'
 import greenplanet from '../assets/Sustainability-Adobe-by-Man-As-Thep-scaled.jpeg'
 import footprintGraph from '../assets/carbon-footprint-1-1024x576.jpg'
+import { useState } from 'react';
 
 const CarbonFootprint = () => {
+  const[clicked, isClicked] = useState(true)
+
 
   const topBanner = DataTopBanner.map(dataEl => {
     return (<TopBannerNoBtn
@@ -19,11 +22,16 @@ const CarbonFootprint = () => {
   const filteredStatsData = Datastats.filter((dataEl) => dataEl.id === 3 || dataEl.id === 4);
 
   
-var liCarbon = document.querySelector('.li-carbon')
-for(let i = 0; i < liCarbon.length; i++){
-  
-}
 
+  function showText(event){
+    const clickedElement = event.target;
+    const pTaginsideLi = clickedElement.querySelector('p');
+    pTaginsideLi.classList.toggle('li-text-inactive')
+
+    isClicked(!clicked)
+  }
+
+ 
   return (
     <main className="CarbonFootprint">
       <Header/>
@@ -52,23 +60,23 @@ for(let i = 0; i < liCarbon.length; i++){
       <section className='introduccion-carbono'>
         <h1>Introduccion a los mercados de carbono</h1>
         <ul>
-          <li className='li-carbon'>¿Qué es una compensación de carbono? 
+          <li onClick={showText} className={clicked ? 'li-carbon' : 'li-carbon::before'}>¿Qué es una compensación de carbono? 
               <p className='li-text li-text-inactive'>Una compensación de carbono es la reducción de una tonelada métrica de emisiones de gases de efecto invernadero, lo cual puede usarse como herramienta para mitigar la huella de carbono de una empresa o incluso puede venderse a otra organización en un mercado internacional.</p> 
           </li>
-          <li className='li-carbon'>¿Como se generan las compensaciones de carbono?
+          <li onClick={showText} className={clicked ? 'li-carbon' : 'li-carbon::before'}>¿Como se generan las compensaciones de carbono?
             <p className='li-text li-text-inactive'>
             Las compensaciones se pueden generar capturando, reutilizando o destruyendo un gas de efecto invernadero que, de otro modo, se habría emitido al aire. También se pueden generar produciendo energía limpia y renovable, así como eliminando el uso de combustibles fósiles.
             </p>
           </li>
-          <li className='li-carbon'>¿Que tipo de empresas están comprando las compensanciones de carbono?
+          <li onClick={showText} className='li-carbon'>¿Que tipo de empresas están comprando las compensanciones de carbono?
             <p className='li-text li-text-inactive'>
             La compensación de carbono es comprada con mayor frecuencia por una corporación del sector privado. Las empresas utilizan estas compensaciones para lograr sus propios objetivos ESG (medioambientales, sociales y de gobierno corporativo), ofrecer a los clientes productos o servicios neutrales en carbono u obtener otros beneficios ambientales y de reputación.
             </p>
           </li>
-          <li className='li-carbon'>¿Cómo se verfican las compensancioones?
+          <li onClick={showText} className='li-carbon'>¿Cómo se verfican las compensancioones?
             <p className='li-text li-text-inactive'>Todas las compensaciones de carbono que ingresan al mercado voluntario serán verificadas por una organización certificada.</p>
           </li>
-          <li className='li-carbon'>
+          <li onClick={showText} className='li-carbon'>
             ¿Cómo se beneficia un programa de compensación de carbono al agricultor?
             <p className='li-text li-text-inactive'>
             Las compensaciones de carbono se pueden utilizar para financiar la transición a prácticas agrícolas más sostenibles. Estas nuevas prácticas pueden incrementar la calidad del producto y el rendimiento de las cosechas. Los beneficios adicionales pueden incluir una comunidad más limpia para los agricultores, entornos de trabajo más seguros y mayores oportunidades económicas.

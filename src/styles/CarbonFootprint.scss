@@ -64,7 +64,7 @@
 .introduccion-carbono > ul > li:active{
   color: #154344;
 }
-.introduccion-carbono > ul > li:active::before{
+.introduccion-carbono > ul > li:active::before, .li-carbon::before{
   color: #154344;
   content: '▲';
   left: 40px;
