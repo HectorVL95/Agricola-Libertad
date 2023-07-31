@@ -16,6 +16,32 @@ const Careers = () => {
     />
   })
 
+
+    function handleSearch(){
+    const jobSearch = document.querySelector('.search-bar').value.trim();
+    if(jobSearch === ''){
+      alert('Lo sentimos, posiciones llenas')
+    }else{
+      alert('Lo sentimos, posiciones llenas')
+    }
+  }
+
+  function showSentMessage(){
+     const inputs = document.querySelector('.preguntas-input').value.trim()
+     if(inputs === "" ){
+      alert("Por favor llene los campos indicados");
+      return
+     }
+
+     const preguntaSection = document.querySelector('.preguntas-contacto')
+     preguntaSection.style.display='none'
+
+     const thanksMessage = document.querySelector('.thanks-message')
+     thanksMessage.style.display="inline"
+  }
+
+
+
   return (
     <main>
       <Header/>
@@ -33,7 +59,7 @@ const Careers = () => {
         <h2>Posiciones Abiertas</h2>
       <form className='search-form'>
         <input type="search" className='search-bar' placeholder='Buscar Posicion'/>
-        <button type='submit'><img className='search-icon' src={search} alt="Search" /></button>
+        <button onClick={handleSearch} type='button'><img className='search-icon' src={search} alt="Search" /></button>
       </form>
       <p>Lo sentimos, en estos momentos agricola libertad tiene ya todas las pocisiones cubiertas</p>
       </section>
@@ -42,12 +68,18 @@ const Careers = () => {
           <h2>¿Preguntas?</h2>
           <p>Porfavor Contactanos para como podemos beneficiarnos mutuamente</p>
           <form action="text" className='preguntas-forma'>
-            <input className='preguntas-input' type="text" placeholder='Nombre'/>
-            <input className='preguntas-input' type="text"  placeholder='Email'/>
-            <input className='preguntas-input' type="text" placeholder='Telefono'/>
+            <input className='preguntas-input' type="name" placeholder='Nombre'/>
+            <input className='preguntas-input' type="email"  placeholder='Email'/>
+            <input className='preguntas-input' type="telephone" placeholder='Telefono'/>
             <input className='preguntas-input mensaje' type="text" placeholder='Mensaje'/>
-            <button className='boton-envio'>Enviar</button>
+            <button onClick={showSentMessage} type='button' className='boton-envio'>Enviar</button>
           </form>
+        </article>
+        <article className='thanks-message'>
+          <p>Gracias por mandar su mensaje, recibira una respuesta lo mas pronto posible de parte de nuestro equipo de reclutamiento; Si gusta mandar otra pregunta porfavor refresque la pagina.
+
+          Gracias, Bonito Dia!
+          </p>
         </article>
       </section>
       <Footer/>
