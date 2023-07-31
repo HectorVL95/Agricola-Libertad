@@ -46,7 +46,7 @@
   padding-inline-end: 40px;
   font-size: 1.4rem;
   font-weight: 600;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .introduccion-carbono > ul > li{
   border-bottom: 1px solid gray;
@@ -56,22 +56,24 @@
   text-align: left;
   left: 10px;
 }
-.introduccion-carbono > ul > li::before{
+.introduccion-carbono > ul > .li-carbon::before{
   content: '⯈';
   position: absolute;
   left: 40px;
 }
-.introduccion-carbono > ul > li:active{
+.introduccion-carbono > ul > .li-carbon:active::before, .li-carbon.active::before{
   color: #154344;
-}
-.introduccion-carbono > ul > li:active::before, .li-carbon::before{
-  color: #154344;
-  content: '▲';
+  transform: rotate(-90deg);
   left: 40px;
+}
+.introduccion-carbono > ul > .li-carbon.active{
+  color: #154344;
 }
 .li-text{
   text-decoration: none;
   font-weight: 400;
+  color: black;
+  
 }
 .li-text-inactive{
   display: none;

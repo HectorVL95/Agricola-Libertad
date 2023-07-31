@@ -18,15 +18,24 @@ const Footer = () => {
       <div className='sub-menu'>
         <ul className='ul-title'>
           Compañia
-          <li>Acerca de nostros</li>
-          <li>Bolsa de trabajo</li>
-          <li>Noticias</li>
+          <li>
+            <Link to={`/Story`}>
+              Acerca de nostros
+            </Link>
+          </li>
+          <li>
+            <Link>
+              Bolsa de trabajo
+            </Link>
+            </li>
         </ul>
         <ul className='ul-title'>
           Sutenibilidad
-          <Link to={``}>
-          <li>Programa contra el monoxido de carbono</li>
-          </Link>
+          <li>
+            <Link to={`/CarbonFootprint`}>
+              Programa contra el monoxido de carbono
+            </Link>
+          </li>
         </ul>
         <ul className='ul-title'>
           Servicios

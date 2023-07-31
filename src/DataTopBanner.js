@@ -36,5 +36,12 @@ export default [
     contact: "Empieza aqui",
     backgroundSecond: "#154344",
     showBtn: true
+  },
+  {
+    id:4,
+    title: "Unete al equipo de Agricola Libertad",
+    description: "Estamos creciendo rapido y queremos que te unas a nuestro dinamico equipo de experimentados desarrolladores, diseñadores y expertos en negocio",
+    background: "url(https://producepay.com/wp-content/uploads/2020/07/producepay-hero-home.jpg)",
+    showBtn: false
   }
 ]

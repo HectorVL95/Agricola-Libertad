@@ -1,0 +1,77 @@
+.disponibilidad{
+  height: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.disponibilidad-title{
+  text-align: center;
+}
+.posiciones{
+  overflow-y: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.posicion-logo{
+  width: 150px;
+  align-self: center;
+}
+.posiciones h2{
+  text-align: center;
+  font-size: 2rem;
+}
+.posiciones p{
+  text-align: center;
+}
+.busqueda-posicion{
+  background-color: whitesmoke;
+}
+.busqueda-posicion h2{
+  text-align: center;
+  font-size: 2rem;
+}
+.search-form{
+  display: flex;
+  flex-direction: row;
+}
+.search-form button{
+  width: 30px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.busqueda-posicion p{
+  text-align: center;
+}
+.search-icon{
+  width: 20px;
+}
+.preguntas{
+  background-color: #154344;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preguntas-contacto{
+  background: whitesmoke ;
+  padding: 10px;
+  align-self: center;
+}
+.preguntas-input{
+  margin-bottom: 10px;
+  height: 25px;
+}
+.mensaje{
+  height: 90px;
+}
+.boton-envio{
+  background-color:#154433;
+  color: white;
+  width: 70px;
+  height: 30px;
+
+  border-radius: 15px;
+  border: none;
+}
