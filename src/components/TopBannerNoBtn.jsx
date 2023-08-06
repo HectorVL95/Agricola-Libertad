@@ -24,14 +24,13 @@ const TopBannerNoBtn = (props) => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-
   }, [])
 
-  
+ 
 
   return (
     <section className={`section-top-banner top-banner-no-btn ${props.specialBackground ? styles['alternate-section-top-banner'] : ''}`}>
-      <article className={`topBanner topBanner-alt ${props.specialBackground ? styles['topBannerCareers']: ''} ${props.videoBackground ? styles['video-background'] : ''}`} style={{background: props.dataEl.background, backgroundSize: "100% 100%", backgroundRepeat: "no-repeat"}}>
+      <article className={`topBanner topBanner-alt ${props.specialBackground ? styles['topBannerCareers']: ''} ${isVideoBackground ? styles['video-background'] : ''}`} style={{background: props.dataEl.background, backgroundSize: "100% 100%", backgroundRepeat: "no-repeat"}}>
       <div className='text-wrap'>
         <h1 className='banner-title banner-title--alt'>{props.dataEl.title}</h1>
         <p className='banner-desc banner-desc--alt'>{props.dataEl.description}</p>
