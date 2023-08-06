@@ -9,10 +9,11 @@ import search from '../assets/search-button-svgrepo-com.svg'
 
 const Careers = () => {
 
-  const dataBanner = DataTopBanner.map(dataEl =>{
+  const DataBanner = DataTopBanner.map((dataEl, index) =>{
     return <TopBannerNoBtn
     dataEl={dataEl}
     key={dataEl.id}
+    specialBackground={index === 4}
     />
   })
 
@@ -45,7 +46,7 @@ const Careers = () => {
   return (
     <main>
       <Header/>
-      {dataBanner[4]}
+      {DataBanner[4]}
       <section className='disponibilidad'>
         <h1 className='disponibilidad-title'>Mira nuestras posiciones disponibles</h1>
         <article className='posiciones'>

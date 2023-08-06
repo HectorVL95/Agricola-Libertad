@@ -26,6 +26,7 @@ export default [
     description:"Nuestro compromiso es con el cliente, su tiempo importa mucho para nosotros, que el cliente este seguro que sus productos llegaran en la mejor condicion y calidad",
     background: "url(https://producepay.com/wp-content/uploads/2022/08/aproducepay-is-building-a-more-connected-and-sustainable-fresh-produce-supply-chain.jpg)",
     backgroundSecond: "#154344",
+    backgroundColor: "#154344",
     showBtn: false
   },
   {
@@ -35,6 +36,7 @@ export default [
     background: "url(https://producepay.com/wp-content/uploads/2022/08/the-very-first-carbon-offset-program-for-the-produce-industry-produce-pay.jpg)",
     contact: "Empieza aqui",
     backgroundSecond: "#154344",
+    backgroundColor: "#154344",
     showBtn: true
   },
   {
@@ -42,6 +44,7 @@ export default [
     title: "Unete al equipo de Agricola Libertad",
     description: "Estamos creciendo rapido y queremos que te unas a nuestro dinamico equipo de experimentados desarrolladores, diseñadores y expertos en negocio",
     background: "url(https://producepay.com/wp-content/uploads/2020/07/producepay-hero-home.jpg)",
+    backgroundSecond: " repeat url(https://producepay.com/wp-content/uploads/2020/07/bg-dots-overlay.png)",
     showBtn: false
   }
 ]

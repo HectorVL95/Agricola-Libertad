@@ -28,9 +28,6 @@
 .inactive{
   display: none;
 }
-.second-article{
-  background-color: #154344;
-}
 @media (min-width: 880px) {
   .section-top-banner{
     display:flex;
@@ -41,7 +38,6 @@
   }
   .topBanner{
     width:50%;
-    height: 60x;
   }
   .banner-desc--alt{
     display: none;

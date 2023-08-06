@@ -1,0 +1,39 @@
+
+.alternate-section-top-banner{
+  display: block;
+  position: relative;
+  margin-bottom: 270px;
+}
+.alternate-section-top-banner .topBannerCareers{
+  position: absolute;
+  z-index: 8;
+  width: 100%;
+}  
+.alternate-section-top-banner .second-article-careers{
+  background-color: rgba(67, 72, 77, 0.57);
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  display: inline;
+  padding: 15px;
+}
+.careers-inactive-text{
+  visibility:visible;
+}
+
+  @media (min-width: 880px){
+    .alternate-section-top-banner{
+      margin-bottom: 600px;
+    }
+    .alternate-section-top-banner .second-article-careers{
+      padding: unset;
+    }
+    .video-background{
+      background: url('https://www.youtube.com/embed/RwbRYp-fOgg?controls=0&rel=0&playsinline=1&enablejsapi=1&origin=https%3A%2F%2Fwww.producepay.com&widgetid=1') no-repeat !important;
+      background-size: cover !important;
+    }
+
+  }
+  
+
+  
