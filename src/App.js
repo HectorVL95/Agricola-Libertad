@@ -10,6 +10,7 @@ import Gallery from './components/Gallery';
 import GalleryBigPic from './components/GalleryBigPic.jsx';
 import CarbonFootprint from './components/CarbonFootprint';
 import Careers from './components/Careers';
+import SingUp from './components/SingUp';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path='/GetInTouch' element={<GetInTouch/>}/>
           <Route path='/CarbonFootprint' element={<CarbonFootprint/>}/>
           <Route path='/Careers' element={<Careers/>}/>
+          <Route path='/SignUp' element={<SingUp/>}/>
         </Routes>
       </BrowserRouter>
     </div>
