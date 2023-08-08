@@ -6,17 +6,33 @@ import DataTopBanner from '../DataTopBanner';
 import TopBannerNoBtn from './TopBannerNoBtn';
 import logo from '../assets/agricola-lib--small-logo.png'
 import search from '../assets/search-button-svgrepo-com.svg'
+import VideoBackgroundBanner from './VideoBackgroundBanner';
 
 const Careers = () => {
 
-  const DataBanner = DataTopBanner.map((dataEl, index) =>{
-    return <TopBannerNoBtn
-    dataEl={dataEl}
-    key={dataEl.id}
-    specialBackground={index === 4}
-    />
-  })
+  const DataBanner = DataTopBanner.map((dataEl, index) => {
+    const videoBackground = index === 4;
 
+    if (index === 4) {
+      return (
+        <VideoBackgroundBanner
+          dataEl={dataEl}
+          key={dataEl.id}
+          specialBackground={index === 4}
+        />
+      );
+    } else {
+      return (
+        <TopBannerNoBtn
+          dataEl={dataEl}
+          key={dataEl.id}
+          specialBackground={index === 4}
+          videoBackground={videoBackground}
+
+        />
+      );
+    }
+  });
 
     function handleSearch(){
     const jobSearch = document.querySelector('.search-bar').value.trim();
