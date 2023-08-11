@@ -8,8 +8,8 @@ const GetInTouch = () => {
     <main>
       <Header/>
       <section className='GetinTouch'>
+        <form className='GetinTouch-form'  action="">
         <h1>Listo para resolver sus preguntas</h1>
-        <form action="">
           <div className='country'>
             <p>Estoy localizado en:</p>
             <select className='country-dropdown' name="localizacion" id="" required>
@@ -276,25 +276,25 @@ const GetInTouch = () => {
           </div>  
           <div className='multiple-choice' required>
             <p>Interesado en (opcional)</p>
-            <label htmlFor="">
+            <label className='check-label' htmlFor="">
               <input type="checkbox" /> 
-              <span>Mayoreo</span>
+              <span className='checkbox-description'>Mayoreo</span>
             </label>
-            <label htmlFor="">
+            <label className='check-label' htmlFor="">
               <input type="checkbox" /> 
-              <span>Menudeo</span>
+              <span className='checkbox-description'>Menudeo</span>
             </label>
-            <label htmlFor="">
+            <label className='check-label' htmlFor="">
               <input type="checkbox" /> 
-              <span>Semillas</span>
+              <span className='checkbox-description'>Semillas</span>
             </label>
-            <label htmlFor="">
+            <label className='check-label' htmlFor="">
               <input type="checkbox" /> 
-              <span>Equipo fertilziacion</span>
+              <span className='checkbox-description'>Equipo fertilziacion</span>
             </label>
-            <label htmlFor="">
+            <label className='check -label' htmlFor="">
               <input type="checkbox" /> 
-              <span>Otros</span>
+              <span className='checkbox-description'>Otros</span>
             </label>
           </div>
           <p>¿Como te podemos ayudar?</p>

@@ -6,48 +6,56 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  z-index: 9;
+  z-index: 11;
   background-color: rgba(0, 0, 0, 0.5);
+  display: none;
 }
-.darken-inactive{
-  visibility: hidden;
+.closeBtn{
+  right: 22px;
+  top:2px;
+  position: relative;
 }
 .gallery-section{
   display: grid;
   grid-template-columns: 40% 40%;
   grid-row-gap: 5%;
   justify-content: center;
-  margin-bottom: 90px;
+  align-items: center;
+  margin-bottom: 220px;
   padding-top: 150px;
-  position: relative;
-}
-.bigImage{
-  position: fixed;
-  display: none;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  top: 180px;
-  bottom: auto;
-  width: 345px;
 }
 .selected-image{
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: grey;
   border: 1px black solid;
   border-radius: 5px;
   position: fixed;
-  z-index: 10;
-  bottom: 400px;
-  left: 612.5px;
-  margin: auto;
-  margin-left: -200px;
-
+  z-index: 12;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  zoom: 190%;
+}
+.carouselBtns{
+  position: fixed;
+  bottom: 19px;
+}
+.leftBtn{
+  left: 3%;
+}
+.rightBtn{
+  left: 83%;
 }
 @media (min-width:768px) {
+.gallery-section{
+  grid-template-columns: 35% 35%;
+}
+}
+
+@media (min-width: 1920px){
   .gallery-section{
-    margin-bottom: 150px;
+    grid-template-columns: 25% 25%;
   }
+
 }
