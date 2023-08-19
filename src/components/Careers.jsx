@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../styles/Careers.scss'
 import Header from './Header';
 import Footer from './Footer';
@@ -10,15 +10,33 @@ import VideoBackgroundBanner from './VideoBackgroundBanner';
 
 const Careers = () => {
 
+  useEffect(() => {
+    // Reset scroll position to top when the component is mounted
+    window.scrollTo(0, 0);
+
+    // Attach a visibility change event listener to reset scroll on tab switch
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        window.scrollTo(0, 0);
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+
   const DataBanner = DataTopBanner.map((dataEl, index) => {
-    const videoBackground = index === 4;
+    const videoBackground = index === 5;
 
     if (index === 4) {
       return (
         <VideoBackgroundBanner
           dataEl={dataEl}
           key={dataEl.id}
-          specialBackground={index === 4}
+          specialBackground={index === 5}
         />
       );
     } else {
@@ -26,7 +44,7 @@ const Careers = () => {
         <TopBannerNoBtn
           dataEl={dataEl}
           key={dataEl.id}
-          specialBackground={index === 4}
+          specialBackground={index === 5}
           videoBackground={videoBackground}
 
         />
@@ -62,7 +80,7 @@ const Careers = () => {
   return (
     <main>
       <Header/>
-      {DataBanner[4]}
+      {DataBanner[5]}
       <section className='disponibilidad'>
         <h1 className='disponibilidad-title'>Mira nuestras posiciones disponibles</h1>
         <article className='posiciones'>

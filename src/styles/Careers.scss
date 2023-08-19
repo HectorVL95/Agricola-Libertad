@@ -46,9 +46,21 @@
   display: flex;
   justify-content: center;
 }
+.busqueda-posicion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.busqueda-posicion .search-form{
+  align-self: center;
+}
+.busqueda-posicion button{
+  height: 30px;
+}
 .busqueda-posicion p{
   text-align: center;
 }
+
 .search-icon{
   width: 20px;
 }
@@ -63,6 +75,10 @@
   background: whitesmoke ;
   padding: 10px;
   align-self: center;
+}
+.preguntas-forma{
+  display: flex;
+  flex-direction: column;
 }
 .thanks-message{
   background: whitesmoke;

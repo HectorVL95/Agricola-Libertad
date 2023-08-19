@@ -72,8 +72,13 @@ p{
   color: whitesmoke;
   margin-top: 40px;
 }
-
-@media (min-width:1920px) {
-
-
+.mensaje-confirmacion{
+  background-color: whitesmoke;
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.mensaje-confirmacion p{
+  font-size: 2.5rem;
 }

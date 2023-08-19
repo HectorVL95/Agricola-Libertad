@@ -7,9 +7,28 @@ import Datastats from '../Datastats';
 import '../styles/CarbonFootprint.scss'
 import greenplanet from '../assets/Sustainability-Adobe-by-Man-As-Thep-scaled.jpeg'
 import footprintGraph from '../assets/carbon-footprint-1-1024x576.jpg'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const CarbonFootprint = () => {
+
+  useEffect(() => {
+    // Reset scroll position to top when the component is mounted
+    window.scrollTo(0, 0);
+
+    // Attach a visibility change event listener to reset scroll on tab switch
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        window.scrollTo(0, 0);
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+
   const[clicked, isClicked] = useState([false, false, false, false])
 
 

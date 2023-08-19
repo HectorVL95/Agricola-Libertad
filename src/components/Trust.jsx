@@ -20,8 +20,6 @@ const Trust = (props) => {
       <p className='text'>Nuestra reputacion nos avala como productores comprometidos en la satisfaccion del cliente.</p>
       <br/>
       <p className='text'>Construimos relaciones de varios años con distribuidores locales asi como exportadores, creando asi una red de basada en transparencia y confianza</p>
-        <ShortBtn
-        text="Learn More"/>
     </section>
   );
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from './Header';
 import '../styles/Story.scss'
 import DataTopBanner from '../DataTopBanner';
@@ -8,6 +8,23 @@ import Footer from './Footer';
 
 
 const Story = () => {
+  useEffect(() => {
+    // Reset scroll position to top when the component is mounted
+    window.scrollTo(0, 0);
+
+    // Attach a visibility change event listener to reset scroll on tab switch
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        window.scrollTo(0, 0);
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
 
   const DataBanner = DataTopBanner.map(dataEl =>{
     return <TopBannerNoBtn

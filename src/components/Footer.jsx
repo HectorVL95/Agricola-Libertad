@@ -8,7 +8,7 @@ const Footer = () => {
 
   let navigate = useNavigate()
   function changeRoute(){
-    navigate('/index')
+    navigate('/')
   }
 
   return (
@@ -39,14 +39,16 @@ const Footer = () => {
         </ul>
         <ul className='ul-title'>
           Servicios
-          <li>Cotizaciones</li>
-          <li>Venta de semillas</li>
-          <li>Inscribirse como proveedor</li>
+          <li>
+            <Link to={'/SignUp'}>
+              Inscribirse como proveedor
+            </Link>
+          </li>
         </ul>
         <ul className='ul-title'>
           Contactenos
-          <li>+52 667 199 5759</li>
-          <li>Ejido Tierra y Libertad S/Numero, Culiacan, Sinaloa, Mexico C.P. 80001</li>
+          <li className='contact-info-li'>+52 667 199 5759</li>
+          <li className='contact-info-li'>Ejido Tierra y Libertad S/Numero, Culiacan, Sinaloa, Mexico C.P. 80001</li>
         </ul>
       </div>
     </footer>

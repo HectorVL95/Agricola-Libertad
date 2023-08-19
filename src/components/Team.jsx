@@ -1,4 +1,4 @@
-  import React from 'react'
+  import Reac, {useEffect} from 'react'
   import Header from './Header';
   import Footer from './Footer';
   import TeamMember from './TeamMember';
@@ -9,42 +9,30 @@
 
 
   const Team = () => {
+
+      useEffect(() => {
+    // Reset scroll position to top when the component is mounted
+    window.scrollTo(0, 0);
+
+    // Attach a visibility change event listener to reset scroll on tab switch
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        window.scrollTo(0, 0);
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+
     const staff = StaffPicArray.map(dataEl=>{
       return (
-      <Link key={dataEl.id} to={`/staff/${dataEl.id}`}> 
         <TeamMember dataEl={dataEl}/>
-      </Link>);
-    })
 
-    /*const aboutTeam = StaffPicArray.map(
-      dataEl=>{
-        return <AboutTeamRosie
-        key={dataEl.id}
-        dataEl={dataEl}/>,
-        <AboutTeamHeather
-        key={dataEl.id}
-        dataEl={dataEl}/>,
-        <AboutTeamKadak
-        key={dataEl.id}
-        dataEl={dataEl}/>
-      }
-    )*/
-   /* const rosie = staff[0];
-    const heather = staff[1];
-    const kadak = staff[2]
-
-    let navigate = useNavigate()
-    function changeRoute(){
-        if(rosie){  
-          navigate(`/AboutTeamRosie`);
-        }
-        else if(heather){
-          navigate('/AboutTeamHeather')
-        }
-        else if(kadak){
-          navigate('/AboutTeamKadak')
-      }
-    }*/
+    )})
 
     const { id } = useParams()
 
@@ -55,9 +43,6 @@
         <section className='gallery-team'>
           {staff.map((item) => item) }
         </section>
-        <Routes>
-            <Route path={`/staff/${id}`} element={<AboutTeamMember staffMembers={StaffPicArray} />} />
-        </Routes>
         <Footer/>
       </main>
     );

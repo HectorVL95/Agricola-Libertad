@@ -13,7 +13,7 @@ const Header = (props) => {
   }
   let navigate = useNavigate()
   function changeRoute(){
-    let path='/index'
+    let path='/'
     navigate(path)
   }
 

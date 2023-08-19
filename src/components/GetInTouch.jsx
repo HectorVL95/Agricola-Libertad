@@ -1,14 +1,60 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Header from './Header';
 import Footer from './Footer';
 import '../styles/GetinTouch.scss'
 
 const GetInTouch = () => {
+
+  const [getInTouchForm, showGetinTouchForm] = useState(true)
+  const [msjConfirmation, showmsjConfirmation] = useState(false)
+
+  useEffect(() => {
+    // Reset scroll position to top when the component is mounted
+    window.scrollTo(0, 0);
+
+    // Attach a visibility change event listener to reset scroll on tab switch
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        window.scrollTo(0, 0);
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+
+  function showSentMsg(){
+
+    const noInputs = document.querySelector('.inputs').value.trim()
+    if(noInputs === ""){
+      alert("Por favor llene los campos indicados");
+      return;
+    }
+   
+    if (document.visibilityState === 'visible') {
+      window.scrollTo(0, 0);
+    }
+   /* const getinTouchForm = document.querySelector('.GetinTouch-form')
+    getinTouchForm.style.display = 'none'*/
+
+    /*const msjConfirmation = document.querySelector('.mensaje-confirmacion')
+    msjConfirmation.style.display = 'block'*/
+    showGetinTouchForm(!getInTouchForm)
+    showmsjConfirmation(true)
+    
+    const GetinTouch = document.querySelector('.GetinTouch')
+    GetinTouch.style.backgroundColor= '#154433'
+
+  }
+  console.log(showSentMsg);
   return (
     <main>
       <Header/>
       <section className='GetinTouch'>
-        <form className='GetinTouch-form'  action="">
+        {getInTouchForm && <form className='GetinTouch-form'  action="">
         <h1>Listo para resolver sus preguntas</h1>
           <div className='country'>
             <p>Estoy localizado en:</p>
@@ -271,38 +317,45 @@ const GetInTouch = () => {
           </div>
           <div className='company'>
             <p>Descripcion de la compañia:</p>
-            <input className='input-text' type="text" required/>
+            <input className='input-text inputs' type="text" required/>
             <p>Por favor, llene este campo requerido</p>
           </div>  
           <div className='multiple-choice' required>
             <p>Interesado en (opcional)</p>
             <label className='check-label' htmlFor="">
-              <input type="checkbox" /> 
+              <input className='inputs' type="checkbox" /> 
               <span className='checkbox-description'>Mayoreo</span>
             </label>
             <label className='check-label' htmlFor="">
-              <input type="checkbox" /> 
+              <input className='inputs' type="checkbox" /> 
               <span className='checkbox-description'>Menudeo</span>
             </label>
             <label className='check-label' htmlFor="">
-              <input type="checkbox" /> 
+              <input className='inputs' type="checkbox" /> 
               <span className='checkbox-description'>Semillas</span>
             </label>
             <label className='check-label' htmlFor="">
-              <input type="checkbox" /> 
+              <input className='inputs' type="checkbox" /> 
               <span className='checkbox-description'>Equipo fertilziacion</span>
             </label>
             <label className='check -label' htmlFor="">
-              <input type="checkbox" /> 
+              <input className='inputs' type="checkbox" /> 
               <span className='checkbox-description'>Otros</span>
             </label>
           </div>
           <p>¿Como te podemos ayudar?</p>
           <input className='input-text' type="text" required/>
           <p>Por favor, llene este campo requerido</p>
-          <button className='sendBtn'>Enviar</button>
-        </form>
+          <button onClick={showSentMsg} className='sendBtn'>Enviar</button>
+        </form>}
+        {msjConfirmation && <article className='mensaje-confirmacion'>
+        <p>Gracias por mandar su pregunta, nuestro equipo trabaja incansablemente para responder en el menor tiempo posible, puede salir de esta pagina o si tiene otra pregunta porfavor refresque la pagina.
+
+        Gracias, Bonito Dia!
+        </p>
+      </article>}
       </section>
+
       <Footer/>
     </main>
   );

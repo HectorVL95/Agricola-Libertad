@@ -8,6 +8,8 @@
   left: 0px;
   z-index: 11;
   background-color: rgba(0, 0, 0, 0.5);
+}
+.darken-inactive{
   display: none;
 }
 .closeBtn{
@@ -36,6 +38,27 @@
   left: 50%;
   transform: translate(-50%, -50%);
   zoom: 190%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+}
+.information-selected-image{
+  align-self: center;
+}
+.picture{
+  width: 150px;
+  margin-bottom: -15px;
+  align-self: center;
+  cursor: pointer;
+}
+.big-picture{
+  width: 150px;
+  margin-bottom: -15px;
+}
+.big-picture-description{
+  font-size: 1.8rem;
+  text-align: center;
 }
 .carouselBtns{
   position: fixed;
@@ -50,6 +73,12 @@
 @media (min-width:768px) {
 .gallery-section{
   grid-template-columns: 35% 35%;
+}
+.big-picture{
+  width: 250px;
+}
+.selected-image{
+  max-width: 250px;
 }
 }
 

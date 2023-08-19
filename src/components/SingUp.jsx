@@ -1,9 +1,28 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Header from './Header';
 import Footer from './Footer';
-import '../styles/Sign-Up.scss'
+import '../styles/Sign-Up.scss';
 
 const SingUp = () => {
+
+  useEffect(() => {
+    // Reset scroll position to top when the component is mounted
+    window.scrollTo(0, 0);
+
+    // Attach a visibility change event listener to reset scroll on tab switch
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        window.scrollTo(0, 0);
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+
   return (
     <main className='Sign-Up'>
       <Header/>
