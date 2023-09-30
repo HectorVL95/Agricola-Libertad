@@ -41,7 +41,7 @@ export default [
   },
   {
     id: 9,
-    img: process.env.PUBLIC_URL + "transportation.jpg",
+    img: process.env.PUBLIC_URL + "/transportation.jpg",
     description: "Transporte"
   }
 ]
