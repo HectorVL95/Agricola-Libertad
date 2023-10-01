@@ -1,5 +1,5 @@
 
-export default [
+const DataTopBanner = [
   {
     id:0,
     title: "Proveendo de la mejor calidad de maiz en el centro de sinaloa",
@@ -53,3 +53,5 @@ export default [
     showBtn: false
   }
 ]
+
+export default DataTopBanner;

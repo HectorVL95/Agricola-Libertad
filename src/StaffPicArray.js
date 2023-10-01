@@ -1,5 +1,5 @@
 
-export default [
+const StaffPicArray = [
 {
   id:1,
   img: process.env.PUBLIC_URL + "/rosie.png",
@@ -43,3 +43,5 @@ export default [
   description:"Steve is responsible for LIBERTY’s Corporate Governance, Legal and Regulatory Affairs, Risk Management, and Human Capital. Steve serves as General Counsel to the LIBERTY Dental Plan Board of Directors as well as Chief Compliance Officer, overseeing national compliance and program integrity. Previously, Steve served as LIBERTY’s Senior Vice President and General Counsel. Steve joined LIBERTY in 2020 and brings over 20 years of experience in health care and managed care operations.",
 }
 ]
+
+export default StaffPicArray;
