@@ -54,11 +54,11 @@ const GetInTouch = () => {
     <main>
       <Header/>
       <section className='GetinTouch'>
-        {getInTouchForm && <form className='GetinTouch-form'  action="">
+        {getInTouchForm && <form className='GetinTouch-form'>
         <h1>Listo para resolver sus preguntas</h1>
           <div className='country'>
             <p>Estoy localizado en:</p>
-            <select className='country-dropdown' name="localizacion" id="" required>
+            <select className='country-dropdown' name="localizacion" required>
               <option>select country</option>
               <option value="AF">Afghanistan</option>
               <option value="AX">Aland Islands</option>
@@ -322,23 +322,23 @@ const GetInTouch = () => {
           </div>  
           <div className='multiple-choice' required>
             <p>Interesado en (opcional)</p>
-            <label className='check-label' htmlFor="">
+            <label className='check-label'>
               <input className='inputs' type="checkbox" /> 
               <span className='checkbox-description'>Mayoreo</span>
             </label>
-            <label className='check-label' htmlFor="">
+            <label className='check-label'>
               <input className='inputs' type="checkbox" /> 
               <span className='checkbox-description'>Menudeo</span>
             </label>
-            <label className='check-label' htmlFor="">
+            <label className='check-label'>
               <input className='inputs' type="checkbox" /> 
               <span className='checkbox-description'>Semillas</span>
             </label>
-            <label className='check-label' htmlFor="">
+            <label className='check-label'>
               <input className='inputs' type="checkbox" /> 
               <span className='checkbox-description'>Equipo fertilziacion</span>
             </label>
-            <label className='check -label' htmlFor="">
+            <label className='check -label'>
               <input className='inputs' type="checkbox" /> 
               <span className='checkbox-description'>Otros</span>
             </label>

@@ -4,13 +4,23 @@ import logo from '../assets/agricola-lib--small-logo.png'
 import menu from '../assets/menu-btn.svg'
 import { useNavigate } from 'react-router-dom'
 
-const Header = (props) => {
+const Header = () => {
 
-  const[isShown, setisShown] = useState("false")
+  const[, setisShown] = useState("false")
 
-  function handleClick() {
+  function handleClick(){
+    document.querySelector('nav').classList.toggle('inactive');
+    if(document.body.style.overflow !== "hidden"){
+      document.body.style.overflow = "hidden";
+    }
+    else{
+      document.body.style.overflow = "scroll";
+    }
+
     setisShown(current => !current)
-  }
+  };
+
+
   let navigate = useNavigate()
   function changeRoute(){
     let path='/'
@@ -38,15 +48,6 @@ const Header = (props) => {
     navigate(path)
   }
 
-  function handleClick(){
-    document.querySelector('nav').classList.toggle('inactive');
-    if(document.body.style.overflow !== "hidden"){
-      document.body.style.overflow = "hidden";
-    }
-    else{
-      document.body.style.overflow = "scroll";
-    }
-  };
   return (
     <header>
       <img onClick={changeRoute}  className='logo' src={logo} alt="Produce Pay Logo" />

@@ -1,5 +1,4 @@
 import React from 'react'
-import Datastats from '../Datastats';
 import Stats from './Stats';
 import '../styles/StatsSection.scss'
 

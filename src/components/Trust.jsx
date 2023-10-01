@@ -1,15 +1,9 @@
 import React from 'react'
-import ShortBtn from './ShortBtn';
-import DataShortBtn from '../DataShortBtn';
 import '../styles/Trust.scss'
 
-const Trust = (props) => {
+const Trust = () => {
 
-  const btn = DataShortBtn.map(dataEl =>{
-    <ShortBtn 
-    key={dataEl.id}
-    dataEl={dataEl}/>
-  })
+
 
 
 

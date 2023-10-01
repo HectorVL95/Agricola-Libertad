@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import family from '../assets/family-agriculture.jpeg';
 import '../styles/MissionVision.scss'
 import Header from './Header';
@@ -29,7 +29,7 @@ const MissionVision = () => {
     <main>
       <Header/>
       <section className='Mission-Vision'>
-        <img className='family-pic' src={family} alt="" />
+        <img className='family-pic' src={family} alt="Familia" />
         <div className='mission divs'>
           <h1>Mision</h1>
           <p>Agricola libertad es una empresa familiar, somo productos de primera de maiz y proveemos la mas alta calidad de servicio al cleinte, educacion y valores, todo esto con el esfuerso de reforzar a nuestros clienttes, compañia y comunidad agricola. Ponemos todo el esfuerzo y las ganas para satisfacer las necesidades y demanda del consumidor final</p>

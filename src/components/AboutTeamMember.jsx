@@ -5,7 +5,7 @@ import '../styles/AboutTeamMember.scss'
 import { useParams } from 'react-router-dom'
 import StaffPicArray from '../StaffPicArray'
 
-const AboutTeamMember = (props) => {
+const AboutTeamMember = () => {
 
   useEffect(() => {
     // Reset scroll position to top when the component is mounted

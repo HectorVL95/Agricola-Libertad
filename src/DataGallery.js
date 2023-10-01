@@ -1,4 +1,4 @@
-export default [
+const DataGallery =[
   {
     id:1,
     img: process.env.PUBLIC_URL + "/camino.jpg",
@@ -45,3 +45,4 @@ export default [
     description: "Transporte"
   }
 ]
+ export default DataGallery;

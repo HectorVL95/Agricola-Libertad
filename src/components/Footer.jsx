@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/Footer.scss'
 import smallLogo from '../assets/agricola-lib--small-logo.png'
-import telephone from '../assets/telephone-svgrepo-com.svg'
 import { useNavigate, Link } from 'react-router-dom'
 
 const Footer = () => {

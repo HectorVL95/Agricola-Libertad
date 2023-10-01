@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Header from './Header';
 import '../styles/Story.scss'
 import DataTopBanner from '../DataTopBanner';

@@ -6,7 +6,7 @@ const TeamMember = (props) => {
 
   return (
     <div className='TeamMember'>
-      <div className=''>
+      <div>
         <img className='staff-pic' src={props.dataEl.img} alt="Staff" />
         <p className='name'>
           <Link to={`/AboutTeamMember/${props.dataEl.id}`}>

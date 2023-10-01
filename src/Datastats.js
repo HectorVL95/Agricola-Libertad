@@ -1,4 +1,4 @@
-export default [
+const Datastats = [
   {
     id:1,
     cantidad: <h2 className='cantidad'>1000 Toneladas</h2>,
@@ -13,7 +13,7 @@ export default [
   },
   {
     id:3,
-    cantidad: <img className="stat-img" src={`${ process.env.PUBLIC_URL + "/buyers-icon-produce-pay.svg"}`}/>,
+    cantidad: <img className="stat-img" src={`${ process.env.PUBLIC_URL + "/buyers-icon-produce-pay.svg"}`} alt="Buyer Icon"/>,
     contact: <h4 className="contacto">Vendedores</h4>,
     description: <ul className="stat-unorder-list">
       <li>Procurar producir producto mas sustentable</li>
@@ -24,7 +24,7 @@ export default [
   },
   {
     id:4,
-    cantidad:  <img className="stat-img" src={`${ process.env.PUBLIC_URL + "/sellers-icon-produce-pay.svg"}`}/>,
+    cantidad:  <img className="stat-img" src={`${ process.env.PUBLIC_URL + "/sellers-icon-produce-pay.svg"}`} alt='Seller Icon'/>,
     contact: <h4 className="contacto">Compradores</h4>,
     description: <ul className="stat-unorder-list">
       <li>Generar ingresos adicionales como proveedor de creditos o descuentos</li>
@@ -34,3 +34,5 @@ export default [
     </ul>
   }
 ]
+
+export default Datastats;

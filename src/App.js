@@ -10,7 +10,6 @@ import Gallery from './components/Gallery';
 import CarbonFootprint from './components/CarbonFootprint';
 import Careers from './components/Careers';
 import SingUp from './components/SingUp';
-import StaffPicArray from './StaffPicArray';
 
 function App() {
   

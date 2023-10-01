@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Header from './Header';
 import Footer from './Footer';
-import workers from '../assets/workers.jpg';
-import corn from '../assets/corn.jpg';
 import '../styles/Gallery.scss';
 import GalleryPic from './GalleryPic';
 import DataGallery from '../DataGallery';
-import closeBtn from '../assets/cancel-icon-svgrepo-com.svg'
-import TeamMember from './TeamMember';
 
 
-const Gallery = (images) => {
+
+const Gallery = () => {
 
   useEffect(() => {
     // Reset scroll position to top when the component is mounted
@@ -96,7 +93,6 @@ const Gallery = (images) => {
         )
       }
       </section>
-
       <Footer/>
     </main>
   );

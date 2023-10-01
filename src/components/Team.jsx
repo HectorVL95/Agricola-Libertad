@@ -1,11 +1,9 @@
-  import Reac, {useEffect} from 'react'
+  import React, {useEffect} from 'react'
   import Header from './Header';
   import Footer from './Footer';
   import TeamMember from './TeamMember';
   import '../styles/Team.scss'
   import StaffPicArray from '../StaffPicArray'
-  import {Route, Routes, Link, useParams} from 'react-router-dom';
-  import AboutTeamMember from './AboutTeamMember';
 
 
   const Team = () => {
@@ -34,7 +32,6 @@
 
     )})
 
-    const { id } = useParams()
 
     return (
       <main className='Team'>

@@ -46,7 +46,7 @@ const SingUp = () => {
             </div>
             <div className='zip-country-div'>
               <input className='zip-input' type="number" placeholder='Codigo postal'/>
-              <select className='country-select' name="country" id="">
+              <select className='country-select' name="country">
               <option>Select country</option>
                 <option value="AF">Afghanistan</option>
                 <option value="AX">Aland Islands</option>

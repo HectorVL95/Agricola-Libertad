@@ -21,7 +21,7 @@ const TopBanner = (props) => {
         </div>
       </article>
       <div className='wrap'>
-        <iframe className='video-banner inactive' style={{background: props.dataEl.backgroundSecond}} src={props.dataEl.sideContent} allowFullScreen="allowFullScreen" frameborder="0" width="400" height="240" allow='autoplay; fullscreen; picture-in-picture' data-ready="true"></iframe>
+        <iframe title='Video Banner' className='video-banner inactive' style={{background: props.dataEl.backgroundSecond}} src={props.dataEl.sideContent} allowFullScreen="allowFullScreen" frameborder="0" width="400" height="240" allow='autoplay; fullscreen; picture-in-picture' data-ready="true"></iframe>
       </div>
     </section>
   );
